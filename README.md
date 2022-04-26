@@ -71,9 +71,9 @@ Conceptually, every line of code in this project was written based on official d
 - **[Retrofit](https://square.github.io/retrofit/)**  
 - **[Coil](https://coil-kt.github.io/coil/)**  
 
-Visits to our most beloved [StackOverflow](https://stackoverflow.com/) certainly happened, for insight and understanding.
+Visits to our most beloved **[StackOverflow](https://stackoverflow.com/)** certainly happened, for insight and understanding.
 
-This app fetches its data from the [Fake Store API](https://fakestoreapi.com/).
+This app fetches its data from the **[Fake Store API](https://fakestoreapi.com/)**.
 
 ## Part 5: Copyright Disclaimer
 
