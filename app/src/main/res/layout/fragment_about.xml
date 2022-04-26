@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    android:padding="@dimen/outer_padding"
+    tools:context=".fragment.AboutFragment">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_far"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textSize="@dimen/regular_text_size" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_far"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text='@string/about_description'
+        android:textAlignment="center"
+        android:textSize="@dimen/regular_text_size" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_close"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/about_author"
+        android:textAlignment="center"
+        android:textSize="@dimen/regular_text_size" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_far"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/about_date"
+        android:textAlignment="center"
+        android:textSize="@dimen/regular_text_size" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_close"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/datasource"
+            android:textAlignment="center"
+            android:textSize="@dimen/regular_text_size" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/datasource"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/fake_store_api"
+            android:textAlignment="center"
+            android:textColor="@color/teal_200"
+            android:textSize="@dimen/regular_text_size" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/sourcecode"
+            android:textAlignment="center"
+            android:textSize="@dimen/regular_text_size" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/github"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/github"
+            android:textAlignment="center"
+            android:textColor="@color/teal_200"
+            android:textSize="@dimen/regular_text_size" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

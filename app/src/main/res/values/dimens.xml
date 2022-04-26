@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="outer_padding">50dp</dimen>
+    <dimen name="space_close">12dp</dimen>
+    <dimen name="space_far">22dp</dimen>
+    <dimen name="button_width">150dp</dimen>
+    <dimen name="regular_text_size">24sp</dimen>
+    <dimen name="profile_pic">200dp</dimen>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ie.dorset.student_24088.project.viewmodel.CartViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:padding="@dimen/outer_padding">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:listData="@{viewModel.cartProductsDetails}"
+                tools:itemCount="20"
+                tools:listitem="@layout/recycler_view_item_cart_product_list" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_far"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text='@{"Total: " + viewModel.totalAmountFormatted}'
+                android:textSize="@dimen/regular_text_size" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/checkout"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:text="@string/checkout" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/empty"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:text="@string/empty_cart" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</layout>

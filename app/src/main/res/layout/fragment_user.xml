@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="ie.dorset.student_24088.project.viewmodel.UserViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center"
+            android:orientation="vertical"
+            android:padding="@dimen/outer_padding"
+            tools:context=".fragment.UserFragment">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profile_picture"
+                android:layout_width="@dimen/profile_pic"
+                android:layout_height="@dimen/profile_pic"
+                android:layout_marginBottom="@dimen/space_far"
+                app:imageUrl="@{viewModel.user.image}"
+                app:placeholder="@{@drawable/loading_img}"
+                app:shapeAppearance="@style/ShapeAppearanceOverlay.Material3.Button" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_close"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text='@{viewModel.user.name.firstname + " " + viewModel.user.name.lastname}'
+                android:textAlignment="center"
+                android:textSize="@dimen/regular_text_size" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_close"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@{viewModel.user.username}"
+                android:textAlignment="center"
+                android:textSize="@dimen/regular_text_size" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_close"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@{viewModel.user.email}"
+                android:textAlignment="center"
+                android:textSize="@dimen/regular_text_size" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_close"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@{viewModel.user.phone}"
+                android:textAlignment="center"
+                android:textSize="@dimen/regular_text_size" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_close"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text='@{viewModel.user.address.number + ", " + viewModel.user.address.street}'
+                android:textAlignment="center"
+                android:textSize="@dimen/regular_text_size" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_close"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@{viewModel.user.address.city}"
+                android:textAlignment="center"
+                android:textSize="@dimen/regular_text_size" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_far"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="@{viewModel.user.address.zipcode}"
+                android:textAlignment="center"
+                android:textSize="@dimen/regular_text_size" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/about"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:text="@string/about" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/logout"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_out" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </ScrollView>
+</layout>

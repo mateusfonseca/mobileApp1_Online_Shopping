@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="item"
+            type="ie.dorset.student_24088.project.model.Data" />
+
+        <variable
+            name="clickListener"
+            type="ie.dorset.student_24088.project.adapter.ItemListener" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_far"
+        android:onClick="@{() -> clickListener.onClick(item)}"
+        app:cardBackgroundColor="@color/purple_500"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <ViewStub
+            android:id="@+id/item_stub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:item="@{item}" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

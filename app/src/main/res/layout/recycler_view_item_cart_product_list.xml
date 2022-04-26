@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="item"
+            type="ie.dorset.student_24088.project.model.Product" />
+    </data>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:importantForAccessibility="no"
+                android:scaleType="centerInside"
+                app:imageUrl="@{item.image}"
+                app:placeholder="@{@drawable/loading_img}" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/category_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_close"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text='@{item.title}'
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/regular_text_size" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
