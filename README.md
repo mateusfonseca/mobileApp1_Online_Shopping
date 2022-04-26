@@ -13,7 +13,7 @@
 **Student Number:** 24088  
 **Student Email:** 24088@student.dorset-college.ie
 
-**Submission date:** 08 May 2022
+**Submission date:** 8 May 2022
 
 This repository contains an "Online Shopping" Android app developed for my Project at Dorset College BSc in Computing, Year 2, Semester 2.
 
@@ -49,7 +49,12 @@ This repository contains an "Online Shopping" Android app developed for my Proje
 
 ## Part 2: Extra features implemented
 
-
+- **1. [View Binding](https://developer.android.com/topic/libraries/view-binding)**  
+- **2. [Data Binding](https://developer.android.com/topic/libraries/data-binding)**  
+- **3. [Navigation](https://developer.android.com/guide/navigation)**  
+- **4. [Fragments](https://developer.android.com/guide/fragments)**  
+- **5. [LiveData](https://developer.android.com/topic/libraries/architecture/livedata)**  
+- **6. [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel)**  
 
 ## Part 3: Report
 
@@ -57,7 +62,18 @@ This repository contains an "Online Shopping" Android app developed for my Proje
 
 ## Part 4: References
 
+Conceptually, every line of code in this project was written based on official documentation:
 
+- **[Android Developers Docs](https://developer.android.com/docs)**  
+- **[Kotlin Docs](https://kotlinlang.org/docs/home.html)**  
+- **[Material Design](https://material.io/)**  
+- **[OkHttp](https://square.github.io/okhttp/)**  
+- **[Retrofit](https://square.github.io/retrofit/)**  
+- **[Coil](https://coil-kt.github.io/coil/)**  
+
+Visits to our most beloved [StackOverflow](https://stackoverflow.com/) certainly happened, for insight and understanding.
+
+This app fetches its data from the [Fake Store API](https://fakestoreapi.com/).
 
 ## Part 5: Copyright Disclaimer
 
