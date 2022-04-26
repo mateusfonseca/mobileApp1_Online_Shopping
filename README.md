@@ -58,7 +58,14 @@ This repository contains an "Online Shopping" Android app developed for my Proje
 
 ## Part 3: Report
 
+For the last assessment of this module, I was tasked with developing an app for an online store based on the JSON files served by the **[Fake Store API](https://fakestoreapi.com/)**. The core requirements of this project were a coming together of everything covered in the previous assignments: [About Me](https://github.com/mateusfonseca/mobileApp1_About_Me.git), [Movie Booking](https://github.com/mateusfonseca/mobileApp1_Movie_Booking.git) and [GitHub Repos](https://github.com/mateusfonseca/mobileApp1_GitHub_Repos.git).
 
+Having, by now, a much clearer vision of the bigger picture of Android development than at the start of the module, I was able to further explore some of its deeper concepts (see [extra features implemented](#part-2-extra-features-implemented)), some of which were truly challenging (*"hello, data binding!?"*). Implementation of LiveData, ViewModel and Coroutines allow for a reliable handling of deferred data that depends on networking, something that I struggled with in previous works.
+
+Once again, it must be said, the visual side of my app might feel somewhat disappointing, which I am well aware of. With the end of the semester approaching and a lot of work to do, I spent only the minimally necessary amount of time and effort on making the application aesthetically acceptable.
+
+**P.S.: Kotlin is beautiful!** :heart:
+**P.S.2: Have I already said that?!**
 
 ## Part 4: References
 
