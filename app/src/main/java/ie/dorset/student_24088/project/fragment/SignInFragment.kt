@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
@@ -102,6 +103,14 @@ class SignInFragment : Fragment() {
                     findNavController().navigate(R.id.action_signInFragment_to_signUpFragment)
                 }
             }
+
+            activity?.onBackPressedDispatcher?.addCallback(
+                viewLifecycleOwner,
+                object : OnBackPressedCallback(true) {
+                    override fun handleOnBackPressed() {
+                        activity?.finish()
+                    }
+                })
         }
     }
 
