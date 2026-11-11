@@ -1,5 +1,8 @@
 # Android App: Online Shopping
 
+**Author:** Mateus Fonseca Campos  
+**Email:** mateusff8@gmail.com
+
 **Dorset College Dublin**  
 **BSc in Science in Computing & Multimedia**  
 **Mobile Applications 1 - BSC20921**  
